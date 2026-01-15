@@ -1,18 +1,39 @@
-.logo {
-  justify-content: center; 
-  position: relative;
-  top: -60px; 
-
+html, body {
+  height: 100%;
+  margin: 0;
 }
-.logo img {
-  height: 250px;  
-  width: auto;
+body {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(to bottom, white, blue);
+}
+.faixa-titulo{
+  text-align: center;
+  background: linear-gradient( to bottom, , blue);
+}
+main {
+  flex: 1;
+  width: 90%;
+  margin: auto;
 }
 form {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
+.logo {
+  text-align: center;
+  opacity: 0.85;
+  background: transparent;
+}
+.logo img {
+  height: 250px;  
+  width: auto;
+  opacity: 0.7;
+  background: transparent;
+    
+}
+
 .lista {
   display: flex;
   gap: 20px;
@@ -25,4 +46,18 @@ form {
 .linha {
   display: flex;
   flex-direction: column;
+}
+.rodape {
+  text-align: center;
+  padding: 20px;
+  background: linear-gradient(to bottom,, blue);
+  color: black;
+}
+.bloco {
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+}
+.bloco.ativo {
+  display: flex;
 }

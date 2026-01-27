@@ -1,5 +1,6 @@
 import { useState } from "react";
 import logo from '../../assets/images/logo.png';
+import { Link } from "react-router-dom";
 
 export const AuthPage = () => {
     const [activeTab, setActiveTab] = useState('login');
@@ -26,8 +27,8 @@ export const AuthPage = () => {
                             <button
                                 onClick={() => setActiveTab('login')}
                                 className={`flex-1 py-3 px-2 text-center relative z-10 font-medium text-sm transition-all duration-300 ${activeTab === 'login'
-                                        ? 'text-gray-800'
-                                        : 'text-gray-500 hover:text-gray-700'
+                                    ? 'text-gray-800'
+                                    : 'text-gray-500 hover:text-gray-700'
                                     }`}
                             >
                                 Login
@@ -36,8 +37,8 @@ export const AuthPage = () => {
                             <button
                                 onClick={() => setActiveTab('cadastro')}
                                 className={`flex-1 py-3 px-2 text-center relative z-10 font-medium text-sm transition-all duration-300 ${activeTab === 'cadastro'
-                                        ? 'text-gray-800'
-                                        : 'text-gray-500 hover:text-gray-700'
+                                    ? 'text-gray-800'
+                                    : 'text-gray-500 hover:text-gray-700'
                                     }`}
                             >
                                 Cadastro
@@ -46,8 +47,8 @@ export const AuthPage = () => {
                             {/* Indicador móvel */}
                             <div
                                 className={`absolute top-1 h-[calc(100%-8px)] w-[calc(50%-8px)] bg-white rounded-full shadow-md transition-all duration-300 ease-in-out ${activeTab === 'login'
-                                        ? 'left-1'
-                                        : 'left-[calc(50%+3px)]'
+                                    ? 'left-1'
+                                    : 'left-[calc(50%+3px)]'
                                     }`}
                             />
                         </div>
@@ -82,9 +83,13 @@ export const AuthPage = () => {
                                     />
                                 </div>
 
-                                <button className='w-full bg-[#315aff] h-10 rounded-lg text-white font-medium hover:bg-[#486dff] transition-colors duration-200 mt-4'>
-                                    Entrar
-                                </button>
+                                <Link
+                                    to={"/clientlist"}
+                                >
+                                    <button className='w-full bg-[#315aff] h-10 rounded-lg text-white font-medium hover:bg-[#486dff] transition-colors duration-200 mt-4'>
+                                        Entrar
+                                    </button>
+                                </Link>
                             </div>
                         )}
 
@@ -202,9 +207,14 @@ export const AuthPage = () => {
                                     />
                                 </div>
 
-                                <button className='w-full bg-[#315aff] h-10 rounded-lg text-white font-medium hover:bg-[#486dff] transition-colors duration-200 mt-4'>
-                                    Cadastrar
-                                </button>
+                                <Link
+                                    to={"/clientlist"}
+                                >
+                                    <button className='w-full bg-[#315aff] h-10 rounded-lg text-white font-medium hover:bg-[#486dff] transition-colors duration-200 mt-4'>
+                                        Cadastrar
+                                    </button>
+                                </Link>
+                                
                             </div>
                         )}
                     </div>

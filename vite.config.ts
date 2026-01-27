@@ -8,4 +8,7 @@ export default defineConfig({
     react(),
     tailwindcss()
   ],
+  base: process.env.NODE_ENV === 'production' && process.env.GITHUB_PAGES === 'true' 
+    ? '/projeto-em-equipe-grupo7/' 
+    : '/',
 })

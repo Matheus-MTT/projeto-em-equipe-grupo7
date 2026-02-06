@@ -8,5 +8,5 @@ export default defineConfig({
     react(),
     tailwindcss()
   ],
-  base: '/projeto-em-equipe-grupo7/',
+  base: '/costumer-management-project/',
 })

@@ -1,5 +1,5 @@
 {
-  "name": "projeto-em-equipe-grupo7",
+  "name": "costumer-management-project",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -12,7 +12,7 @@
     "build:gh-pages": "GITHUB_PAGES=true vite build",
     "deploy:gh-pages": "npm run build:gh-pages && gh-pages -d dist"
   },
-  "homepage": "https://Vinicius-MCS.github.io/projeto-em-equipe-grupo7",
+  "homepage": "https://Vinicius-MCS.github.io/costumer-management-project",
   "dependencies": {
     "@tailwindcss/vite": "^4.1.18",
     "react": "^19.2.0",
